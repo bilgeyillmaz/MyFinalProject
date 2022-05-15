@@ -9,6 +9,7 @@ namespace Core.DependencyResolvers
 {//uygulama seviyesinde service bağımlılıkları burada çözülüyor
     public class CoreModule : ICoreModule
     {
+
         public void Load(IServiceCollection serviceCollection)
         {
             serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

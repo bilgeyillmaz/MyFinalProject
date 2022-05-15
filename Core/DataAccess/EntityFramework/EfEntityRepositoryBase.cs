@@ -18,9 +18,9 @@ namespace Core.DataAccess.EntityFramework
             //referansı yakala, 2-bu eklenecek bir nesne, 3-buradaki bütün işlemleri gerçekleştir
             using (TContext context = new TContext())
             {
-                var addedEntity = context.Entry(entity); 
-                addedEntity.State = EntityState.Added; 
-                context.SaveChanges(); 
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
+                context.SaveChanges();
             }
         }
 
